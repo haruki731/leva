@@ -5,6 +5,11 @@
         <title>Blog</title>
     </head>
     <body>
+        <x-app-layout>
+            <x-slot name="header">
+                （ヘッダー名）
+            </x-slot>
+            (各ブレードファイルの中身)
         <h1>Blog Name</h1>
         <form action="/posts" method="POST">
             @csrf
@@ -29,5 +34,6 @@
             <input type="submit" value="保存"/>
         </form>
         <div class="back">[<a href="/">back</a>]</div>
+        </x-app-layout>
     </body>
 </html>
